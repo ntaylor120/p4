@@ -1,0 +1,538 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Events Calendar Application</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="Wachipi Srl">
+	<meta name="copyright" content="Wachipi Srl">
+	<meta name="generator" content="Documenter v1.6 http://rxa.li/documenter">
+	<meta name="date" content="2013-04-23T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	
+	
+	<script src="js/jquery.1.6.4.js"></script>
+	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#0000FF;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ol{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ol a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ol a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ol a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#installation">Installation</a></li>
+			<li><a href="#settings">Settings</a></li>
+			<li><a href="#calendars">Calendars</a></li>
+			<li><a href="#change_admin_password">Change admin password</a></li>
+			<li><a href="#metatags">Metatags</a></li>
+			<li><a href="#twitter_management">Twitter management</a></li>
+			<li><a href="#mobile_browsers_management">Mobile browsers management</a></li>
+			<li><a href="#public_section">Public section</a></li>
+			<li><a href="#mobile">Mobile</a></li>
+			<li><a href="#how_to_embed_the_calendar_in_a_custom_php_page">How to embed the calendar in a custom php page</a></li>
+			<li><a href="#useful_information_to_know">Useful information to know</a></li>
+			<li><a href="#events_calendar_versions">Events Calendar Versions</a></li>
+			<li><a href="#upgrades">Upgrades</a></li>
+
+		</ol>
+		<div id="documenter_copyright">Copyright Wachipi Srl 2013<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.6</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>Events Calendar Application</h1><hr><ul><li>Created: 11/26/2012</li><li>latest Update: 04/23/2013</li><li>By: Wachipi Srl</li><li><a href=""></a></li></ul></section><section id="installation">
+	<h3>Installation</h3><hr class="notop">
+<p>
+	&nbsp;Follow these simple steps and Events Calendar will be fully functional and ready for use.<br>
+	<br>
+	<strong>1. Upload the folder &ldquo;events&rdquo; in your server</strong><br>
+	<br>
+	If you like, you can change the folder name &ldquo;events&rdquo;, but it&#39;s important to remember that the internal folders names must not be changed. Also do not move the folder called &ldquo;admin&rdquo;.<br>
+	<br>
+	<strong>2. Import in your database the file &ldquo;events.sql&rdquo; that is in the folder events_DB</strong><br>
+	<br>
+	Before importing it is always suggested to make a backup of your database<br>
+	<br>
+	The added tables of Events Calendar will have the prefix events_<br>
+	<br>
+	<strong>3. Open the file db_conn.php in the folder events&gt; admin &gt;include and set the connection data of your database</strong><br>
+	<br>
+	Well done!<br>
+	<br>
+	Events Calendar was installed properly.<br>
+	<br>
+	Now it remains only to set the control panel.<br>
+	<br>
+	&nbsp;<strong>4. Sign in to the administrator control panel</strong><br>
+	<br>
+	To go to the login page type the full address where you installed Events Calendar, adding /admin.<br>
+	<br>
+	For example, if you didn&rsquo;t change the folder name, the address will be http://www.yourwebsitehere.com/events/admin<br>
+	<br>
+	Access credentials are<br>
+	<br>
+	User: admin<br>
+	<br>
+	Password: admin</p>
+<p>
+	<br>
+	<strong>5. Go to settings area and set your preferences. You can change them at any time.</strong><br>
+	<br>
+	To see how to configure your settings, go to Settings section<br>
+	<br>
+	<strong>6. Create your calendar.</strong><br>
+	<br>
+	Congratulations. Now you can start creating events.</p>
+</section>
+<section id="settings">
+	<h3>Settings</h3><hr class="notop">
+<p>
+	This is an important section where all the app&#39;s settings can be managed.<br>
+	<br>
+	<strong>Absolute path of Events Calendar installation</strong><br>
+	<br>
+	It&#39;s a very important setting and must be set to make the whole app working. If you do not set, the app won&#39;t work at all.<br>
+	<br>
+	<strong>Timezone</strong><br>
+	<br>
+	Set your timezone to highlight the right day when visitors load your calendars and to load Twitter data if set.</p>
+<p>
+	<strong>Calendar date format</strong></p>
+<p>
+	Choose if you prefer to use UK (dd/mm/yyyy and the weeks starting on Monday) or US (mm/dd/yyyy and the weeks starting on Sunday) date format.</p>
+<p>
+	<strong>Calendar time format</strong></p>
+<p>
+	Choose if you prefer to use 12-hour time format (with am/pm) or 24-hour time format.</p>
+<p>
+	<br>
+	<strong>Twitter approvation</strong></p>
+<p>
+	Set this option if you want to monitor Twitter data and prevent spam on the event page.</p>
+<p>
+	If you set it to &quot;YES&quot;, you can also insert an email address to receive the latest tweets to be approved.</p>
+<p>
+	<strong>Flickr API Key</strong></p>
+<p>
+	Follow Flickr link to get an API Key and set this option if you want to have the chance to show Flickr photos in the event page.</p>
+<p>
+	<strong>Available events preview</strong><br>
+	&nbsp;<br>
+	This is just a &quot;graphic&quot; setting. If you want to show <span lang="en-GB">the preview of the available events when visitors are navigating into calendar, check &quot;enabled&quot;</span></p>
+<p>
+	<strong>Default view</strong></p>
+<p>
+	Here you can choose which view will be the default one when a user lands to your events calendar. Options are between the classic calendar view and the list view.</p>
+<p>
+	If you choose the list view, you can specify if you want to show only future events, past events or all events of the calendar. This option will be also extended to the &quot;List&quot; button.</p>
+<p>
+	<strong>Activate mobile version</strong></p>
+<p>
+	Using this option you can activate the mobile version of the Events Calendar. If you activate it when a user lands to your calendar page using a mobile device, he will see the optimized version for mobile devices.</p>
+</section>
+<section id="calendars">
+	<h3>Calendars</h3><hr class="notop">
+<p>
+	This section allow you to view, add, publish, unpublish and delete all your calendars.<br>
+	<br>
+	As you can see you can add more than one calendar. i.e. You have two different location where you usually organize events, you can use two different calendars.<br>
+	<br>
+	You must create at least a calendar item to make the app working.<br>
+	<br>
+	<strong>Adding calendars</strong><br>
+	<br>
+	It&#39; s easy to add a calendar, just type the name of your calendar and click &quot;Add&quot;. You&#39;ll see your calendar appearing in the list below. A new calendar is never published when created, because it&#39;s empty, it has no events yet, so it would be useless to show it on the app.<br>
+	<br>
+	If you add more than one calendar, you&#39;ll se a button appearing below the &quot;published/unpublished&quot; icon. There must be a default calendar if you have more than one. The default calendar will be the first appearing when the app is loaded.<br>
+	<br>
+	<strong>Modify a calendar name</strong><br>
+	<br>
+	To modify a calendar name, just click on &quot;Modify name&quot; and type the new name, then click on &quot;Save&quot;.<br>
+	<br>
+	<strong>Publish/Unpublish calendars</strong><br>
+	<br>
+	It&#39;s easy to publish or unpublish a calendar. If you want to change just one calendar status, you can click on the &quot;published/unpublished&quot; icon and that&#39;s it.<br>
+	<br>
+	If you need to change more than one calendar status, you can select the calendars you want to publish or unpublish and then click on &quot;Publish&quot; or &quot;Unpublish&quot; on the action bar at the top.<br>
+	<br>
+	Publishing or unpublishing a calendar, is useful if you need to do some modifications on calendar events and you don&#39;t want people to see that you&#39;re working on it.<br>
+	<br>
+	<strong>Delete calendars</strong><br>
+	<br>
+	You can also delete one calendar or more.<br>
+	<br>
+	To delete only one calendar, just click on &quot;Delete&quot; on the corrisponding calendar row. To delete more than one calendar, select the calendars you want to delete and then click on &quot;Delete&quot; on the action bar at the top.<br>
+	<br>
+	Once you&#39;ve deleted a calendar, all related events will be deleted.</p>
+<p>
+	<strong>Duplicate calendars</strong></p>
+<p>
+	You can also duplicate existing calendars. Avoid losing time to insert a new calendar and its events by duplicating an already existing one (with all the events). You will always be able to edit the duplicated calendar.</p>
+<p>
+	<strong>Manage Events</strong></p>
+<p>
+	To manage your events for each calendar, just click on &quot;Events&quot; on the calendar row for which you want to manage events.</p>
+<p>
+	Once clicked, you&#39;ll find the list of all the events created for that specific calendar. Here you are able to add new events or to modify, publish, unpublish and delete the existing ones.</p>
+<p>
+	To create a new event just click on &quot;Add&quot; on the action bar at the top. A form will open and you&#39;ll be able to insert all the information about the event.</p>
+<p style="margin-left: 40px;">
+	<strong>Create events</strong></p>
+<p style="margin-left: 40px;">
+	First you&#39;re asked to insert a title for the event (e.g. &quot;Grand meeting&quot;).</p>
+<p style="margin-left: 1.01cm; margin-bottom: 0cm">
+	Then specify the date of the event. An event can last more than one day, so you can insert &quot;date from&quot; and &quot;date to&quot;. If your event lasts only one day, just fill &quot;date from&quot; field.</p>
+<p style="margin-left: 1.01cm; margin-bottom: 0cm">
+	You can also select if it&#39;s a recurring event or not. If it&#39;s a recurring event, you can select one or more days of the week or specific dates on which the event occurs.</p>
+<p style="margin-left: 1.01cm; margin-bottom: 0cm">
+	<span lang="en-GB">Then you can specify a starting time for your event and the ending time too.</span></p>
+<p style="margin-left: 1.01cm; margin-bottom: 0cm">
+	If you want, you can specify times for each day the event lasts. (e.g. the first day, event starts at 10.00 and ends at 13.00 and restarts from 15.00 to 18.00, but on the second day it starts at 15.00 and ends at 19.00 etc.)</p>
+<p style="margin-left: 40px;">
+	You can also insert the event venue information.</p>
+<p style="margin-left: 40px;">
+	You can optionally add the admission rules, writing all prices for the event or setting it free by clicking on the check below the text field. This information will be shown in the spotlight in the event page.</p>
+<p style="margin-left: 40px;">
+	You can also specify if there is a fixed number of available seats or if they are unlimited.</p>
+<p style="margin-left: 40px;">
+	Then you&#39;ll be able to add a cover photo, which represents the event and you can choose whether to show or not this photo into the event page. By default it will be shown into the event page and events list.</p>
+<p style="margin-left: 40px;">
+	You can add a detailed description, a complete gallery of photos, a video, with a text, and a map, with a text, for your event, so people will be able to see how to easily reach the event location.</p>
+<p style="margin-left: 40px;">
+	You can also choose to add a link to your online store to allow users to buy tickets for the event and/or a link to a specific website (e.g. the event website).</p>
+<p style="margin-left: 40px;">
+	The link for the online store will appear as a button on the right side of the event page, while the website link will be shown on the left side of the event page.</p>
+<p style="margin-left: 40px;">
+	Then you can insert the Twitter hashtag related to your event, to show the most recent tweets for the event.</p>
+<p style="margin-left: 40px;">
+	You can also insert a search string for Flickr, to show the latest pics uploaded on Flickr related to the event.</p>
+<p style="margin-left: 40px;">
+	Last but not least, you can add metatags for your event page. This will be useful for the search engine optimization (SEO). To know more about metatags <a href="http://en.wikipedia.org/wiki/Metatag">click here</a>, about SEO <a href="http://en.wikipedia.org/wiki/Search_engine_optimization">click here</a> .</p>
+<p style="margin-left: 40px;">
+	Then, just click on &quot;Save&quot;. You&#39;ll be redirected to the events list.</p>
+<p style="margin-left: 40px;">
+	<strong>Modify Events</strong></p>
+<p style="margin-left: 40px;">
+	Modifying events is as easy as creating them. Just click on &quot;Modify&quot; on the chosen event row and you&#39;ll be able to modify all the information about it.</p>
+<p style="margin-left: 40px;">
+	<strong>Publish/Unpublish Events</strong></p>
+<p style="margin-left: 40px;">
+	Performing these operations on events is very fast.</p>
+<p style="margin-left: 40px;">
+	You can publish/unpublish a single event or more than one at once. To modify a single event status, click on the &quot;published/unpublished&quot; icon on the event row and it&#39;s done, status has been changed.</p>
+<p style="margin-left: 40px;">
+	If you want to change status of several events, just select the events for which you want to perform the action and then click on &quot;publish&quot; or &quot;unpublish&quot; on the action bar at the top.</p>
+<p style="margin-left: 40px;">
+	<strong>Delete Events</strong></p>
+<p style="margin-left: 40px;">
+	To delete one or more events, just select the chosen events and click on &quot;delete&quot; on the action bar at the top.</p>
+<p style="margin-left: 40px;">
+	<strong>Duplicate Events</strong></p>
+<p style="margin-left: 40px;">
+	You can also duplicate existing events. If you have a recurrent event or if you plan to organize a similar one, avoid losing time to insert the new event and duplicate the already existing one (with description, photo, location&hellip;). You will always be able to edit the duplicated event.</p>
+</section>
+<section id="change_admin_password">
+	<h3>Change admin password</h3><hr class="notop">
+<p>
+	In this section you can change admin panel access password.</p>
+<p>
+	Just type old password, the new password, confirm the new password and click on &quot; Save&quot;.</p>
+</section>
+<section id="metatags">
+	<h3>Metatags</h3><hr class="notop">
+<p>
+	In this section you can edit metatags of your booking calendar application.</p>
+<p>
+	For info about Metatags click here: <a href="http://en.wikipedia.org/wiki/Metatag">http://en.wikipedia.org/wiki/Metatag</a></p>
+<p>
+	You can modify page title (&lt;title&gt; tag), meta title (&lt;meta name=&quot;title&quot;&gt; tag), meta description (&lt;meta name=&quot;description&quot;&gt; tag) and meta keywords (&lt;meta name=&quot;keywords&quot;&gt; tag).</p>
+<h3>
+	&nbsp;</h3>
+</section>
+<section id="twitter_management">
+	<h3>Twitter management</h3><hr class="notop">
+<p>
+	<strong>Twitter spam</strong></p>
+<p>
+	Here you can find all Twitter users you marked as spam.</p>
+<p>
+	To remove users from spam list, just click on red icon on the row you want to remove from spam list and it&#39;s done.</p>
+<p>
+	To remove more than one user at once from spam list, just select the chosen users by clicking on the corresponding checkboxes on the left and click &quot;Remove from spam list&quot; in the action bar above.</p>
+<p>
+	In both cases, you&#39;ll be automatically redirected to Twitter approved users list.</p>
+<p>
+	To add a user to the spam list, you can also type the username in the box at the top of the page and then click on &quot;Add&quot;.</p>
+<p>
+	<strong>Twitter approval</strong></p>
+<p>
+	Here you can find all Twitter users that have made a tweet about your events. If you set the option &quot;Twitter approvation&quot; to &quot;NO&quot; in the settings page, you&#39;ll always see a green icon on the right of the username, which means that the user is approved and his tweets are visible on your events pages.</p>
+<p>
+	Instead, if you set the option &quot;Twitter approvation&quot; to &quot;YES&quot; in the settings page, you&#39;ll see a red icon next to the not-yet-approved users.</p>
+<p>
+	To approve or disapprove a user, just click on the icon in the corresponding row and the status will change automatically. If you disapprove a user, it will be removed from this list, and put automatically in the spam list.</p>
+<p>
+	To change status of more than one user at once, just select the chosen users by clicking on the corresponding checkboxes on the left and then click &quot;sign as spam&quot; on the action bar above to put the selected users into spam list, or on &quot;approve&quot;, to make the selected users&#39; tweets visible on your event page.</p>
+<p>
+	To add a user to the approved list, you can also type the username in the box at the top of the page and then click on &quot;Add&quot;.</p>
+</section>
+<section id="mobile_browsers_management">
+	<h3>Mobile browsers management</h3><hr class="notop">
+<p>
+	In this section you&#39;ll be able to keep up to date the list of the browser used by mobile device.</p>
+<p>
+	This list is very important to make the mobile version working properly. In this list you can add not only browsers names, but also new devices names, as sometimes the mobile devices are not identified just through browsers information, but also through the mobile device general information, such as name.</p>
+<p>
+	You can also delete obsolete browsers if you want, just select the rows you want to remove and click on &quot;Delete&quot; on the action bar above.</p>
+<p>
+	The list provided by default has been updated in July 2012.</p>
+</section>
+<section id="public_section">
+	<h3>Public section</h3><hr class="notop">
+<p>
+	Public section is what your visitors will see.</p>
+<p>
+	According to what you set in admin panel settings,the first view can be the default calendar for the current month with the current day marked or the event list view.</p>
+<p>
+	As for the default calendar view, the monthly view shows the events per day and clicking on the arrows the user can navigate through months.</p>
+<p>
+	Clicking on the &quot;LIST&quot; button he can see a list of all the events of the current calendar. By default he will see the present/future events, according to the month he is navigating in, but he&#39;ll be able to select also past events or to choose to see all the calendar events.</p>
+<p>
+	Other calendars are available in the drop down at the top right of the screen.</p>
+<p>
+	Just passing the mouse over a day he can be shown a preview of available events per day (according to what you previously set in settings area).</p>
+<p>
+	Clicking on a day, a list of the available events for that day appears.</p>
+<p>
+	As for the list view, the user will see all the events according to the filter you set in admin panel, therefore &quot;future&quot;, &quot;past&quot; or &quot;all&quot;. Future and past events refer to today date.</p>
+<p>
+	Visitors can always look for events inserting a text in the &quot;Search for events&quot; field situated at the the top right of the page. The search will be performed in titles and descriptions of all the events into the chosen calendar.</p>
+<p>
+	By clicking on &quot;Read more&quot; button of an event, the user will see the event detail.</p>
+<p>
+	In the event detail there are:</p>
+<p>
+	- on the left, all the information about where, when, prices and timetable with a preview of the cover photo and the link to the website of the event, if specified in control panel</p>
+<p>
+	- on the right, the event description and the photo gallery, the video, the map, Twitter and Flickr buttons. Plus, the green button that leads to your online store (if specified in control panel)</p>
+<p>
+	By clicking on &quot;Close&quot;, the user will return to the calendar.</p>
+</section>
+<section id="mobile">
+	<h3>Mobile</h3><hr class="notop">
+<p>
+	In &quot;mobile&quot; folder you can find the mobile version of this application.</p>
+<p>
+	This version is automatically displayed when a user lands to your Events Calendar page using a mobile device, if you set this option in the admin panel.</p>
+<p>
+	This version is optimized for mobile devices to make users see the Events Calendar page in the best and clearest way.</p>
+<p>
+	You don&#39;t have to manage also this version, the data are always retrieved from the database, so what you insert in admin panel, will work on both desktop version and mobile version.</p>
+</section>
+<section id="how_to_embed_the_calendar_in_a_custom_php_page">
+	<h3>How to embed the calendar in a custom php page</h3><hr class="notop">
+<div class="label_title">
+	<div class="label_title">
+		<p style="margin-bottom: 0cm">
+			To embed the calendar in an existing php page follow the guidelines in &quot;index.php&quot; code. You&#39;ll find some comments explaining where you have to put the parts of code (included in this file) in your custom php page.</p>
+		<p style="margin-bottom: 0cm">
+			Then copy all the subfolders and files of the &quot;events&quot; folder at the same level of your page, except for &quot;index.php&quot; file.</p>
+	</div>
+</div>
+</section>
+<section id="useful_information_to_know">
+	<h3>Useful information to know</h3><hr class="notop">
+<p style="margin-bottom: 0cm">
+	<span lang="en-GB">Actually </span><span lang="en-GB">all the texts are in English, except the email that you can manage in the control panel.</span></p>
+<p style="margin-bottom: 0cm">
+	<span lang="en-GB">If you want to change the language of the admin panel open the file </span><span lang="en-GB">lang.php in the folder &ldquo;admin/include&rdquo; and carefully change only the texts.</span></p>
+<p style="margin-bottom: 0cm">
+	<span lang="en-GB">If you want to change the public section language open the file </span><span lang="en-GB">lang.php in the folder &ldquo;include&rdquo; and carefully change only the texts.</span></p>
+<p lang="en-GB" style="margin-bottom: 0cm">
+	***</p>
+<p lang="en-GB" style="margin-bottom: 0cm">
+	All the graphic files are in a single image called sprite.png that is in the folder events &gt; images.</p>
+<p lang="en-GB" style="margin-bottom: 0cm">
+	To change Events Calendar graphics colors simply modify the source file in the folder graphic.</p>
+<p lang="en-GB" style="margin-bottom: 0cm">
+	Export the modified file naming it sprite.png and substitute it to the prior file in the folder events &gt; images.</p>
+<p lang="en-GB" style="margin-bottom: 0cm">
+	***</p>
+<p lang="en-GB" style="margin-bottom: 0cm">
+	<strong>For experts.</strong></p>
+<p style="margin-bottom: 0cm">
+	<span lang="en-GB">Used fonts are Bebas e Cuprum</span><span lang="en-GB">, from fontsquirrel.com.</span></p>
+<p lang="en-GB" style="margin-bottom: 0cm">
+	If you want to change them, open the file mainstyle.css in the folder css and change the css rules</p>
+</section>
+<section id="events_calendar_versions">
+	<h3>Events Calendar Versions</h3><hr class="notop">
+<p>
+	<strong>Events Calendar 1.3</strong></p>
+<p>
+	<strong>Added features:</strong></p>
+<p>
+	- recurring events even on specific dates and not only weekly</p>
+<p>
+	- event page metatags for SEO management</p>
+<p>
+	- admin panel language labels in a unique file to easily change them</p>
+<p>
+	- possibility to set the events list view as the default one</p>
+<p>
+	- mobile version</p>
+<p>
+	<strong>Fixed Bugs:</strong></p>
+<p>
+	- timepicker problem in admin panel</p>
+<p>
+	- event url address without spaces</p>
+<p>
+	- duplicate events error</p>
+<p>
+	- list view content</p>
+<p>
+	- delete events error</p>
+<p>
+	<strong>Events Calendar 1.2</strong></p>
+<p>
+	<strong>Added features:</strong></p>
+<p>
+	- time format 12/24 hours setting</p>
+<p>
+	<strong>Fixed Bug:</strong></p>
+<p>
+	- events preview popup bug on mobile devices</p>
+<p>
+	- admin area login bug</p>
+<p>
+	<strong>Events Calendar 1.1</strong></p>
+<p>
+	<strong>Added features:</strong></p>
+<p>
+	ADMIN</p>
+<p>
+	- possibility to add recurring events</p>
+<p>
+	- event start time is no longer mandatory</p>
+<p>
+	PUBLIC</p>
+<p>
+	- events list view</p>
+<p>
+	<strong>Fixed Bug:</strong></p>
+<p>
+	- delete events bug in admin area</p>
+<p>
+	- datepicker bug in admin area</p>
+<p>
+	- events search bug in public area</p>
+<p>
+	- delete event photos bug in admin area</p>
+</section>
+<section id="upgrades">
+	<h3>Upgrades</h3><hr class="notop">
+<p>
+	<strong>From 1.2 to 1.3</strong></p>
+<p>
+	To upgrade to Events Calendar version 1.3, follow these simple steps:</p>
+<p>
+	- backup the events folder, for good measure, before proceeding with the upgrade.</p>
+<p>
+	- copy and overwrite the events folder (version 1.3) into the events folder of the previous version, except the file named db_conn.php (you can find it in events &gt; admin &gt; include)</p>
+<p>
+	Pay attention: if you have modified the code or the graphic, after the overwriting, modification will be deleted and you will have to enter them again.</p>
+<p>
+	- open phpMyAdmin and import the file upgrade_from_1-2_to_1-3.sql (you can find it in the folder upgrade_from_1-2_to_1-3)</p>
+<p>
+	<strong>From 1.1 to 1.3</strong></p>
+<p>
+	To upgrade to Events Calendar version 1.3, follow these simple steps:</p>
+<p>
+	- backup the events folder, for good measure, before proceeding with the upgrade.</p>
+<p>
+	- copy and overwrite the events folder (version 1.3) into the events folder of the previous version, except the file named db_conn.php (you can find it in events &gt; admin &gt; include)</p>
+<p>
+	Pay attention: if you have modified the code or the graphic, after the overwriting, modification will be deleted and you will have to enter them again.</p>
+<p>
+	- open phpMyAdmin and import the file upgrade_from_1-1_to_1-3.sql (you can find it in the folder upgrade_from_1-1_to_1-3)</p>
+<p>
+	<strong>From 1.0 to 1.3</strong></p>
+<p>
+	To upgrade to Events Calendar version 1.3, follow these simple steps:</p>
+<p>
+	- backup the events folder, for good measure, before proceeding with the upgrade.</p>
+<p>
+	- copy and overwrite the events folder (version 1.3) into the events folder of the previous version, except the file named db_conn.php (you can find it in events &gt; admin &gt; include)</p>
+<p>
+	Pay attention: if you have modified the code or the graphic, after the overwriting, modification will be deleted and you will have to enter them again.</p>
+<p>
+	- open phpMyAdmin and import the file upgrade_from_1-0_to_1-3.sql (you can find it in the folder upgrade_from_1-0_to_1-3)</p>
+<p>
+	<strong>From 1.1 to 1.2</strong></p>
+<p>
+	To upgrade to Events Calendar version 1.2, follow these simple steps:</p>
+<p>
+	- backup the events folder, for good measure, before proceeding with the upgrade.</p>
+<p>
+	- copy and overwrite the events folder (version 1.2) into the events folder of the previous version, except the file named db_conn.php (you can find it in events &gt; admin &gt; include)</p>
+<p>
+	Pay attention: if you have modified the code or the graphic, after the overwriting, modification will be deleted and you will have to enter them again.</p>
+<p>
+	- open phpMyAdmin and import the file upgrade_from_1-1_to_1-2.sql (you can find it in the folder upgrade_from_1-1_to_1-2)</p>
+<p>
+	<strong>From 1.0 to 1.2</strong></p>
+<p>
+	To upgrade to Events Calendar version 1.2, follow these simple steps:</p>
+<p>
+	- backup the events folder, for good measure, before proceeding with the upgrade.</p>
+<p>
+	- copy and overwrite the events folder (version 1.2) into the events folder of the previous version, except the file named db_conn.php (you can find it in events &gt; admin &gt; include)</p>
+<p>
+	Pay attention: if you have modified the code or the graphic, after the overwriting, modification will be deleted and you will have to enter them again.</p>
+<p>
+	- open phpMyAdmin and import the file upgrade_from_1-0_to_1-2.sql (you can find it in the folder upgrade_from_1-0_to_1-2)</p>
+<p>
+	<strong>From 1.0 to 1.1</strong></p>
+<p>
+	To upgrade to Events Calendar version 1.1, follow these simple steps:</p>
+<p>
+	- backup the events folder, for good measure, before proceeding with the upgrade.</p>
+<p>
+	- copy and overwrite the events folder (version 1.1) into the events folder of the previous version, except the file named db_conn.php (you can find it in events &gt; admin &gt; include)</p>
+<p>
+	Pay attention: if you have modified the code or the graphic, after the overwriting, modification will be deleted and you will have to enter them again.</p>
+</section>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,1075 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background: url(../images/bg.png) #630 top center repeat-y;
+	padding: 0px;
+	margin: 0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#333;
+}
+
+h1 {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.breadcrumb {
+	height: 35px;
+	line-height: 38px;
+	margin-left: 10px;
+	float:left;
+}
+
+.breadcrumb a {
+	color: #333;
+	text-decoration: none;
+}
+
+.breadcrumb a:hover {
+	color: #666;
+	text-decoration: underline;
+}
+
+#span_description {
+	font-size: 12px;
+	color: #666;
+}
+
+#span_description a {
+	font-weight: bold;
+	color: #333;
+}
+
+#span_description a:hover {
+	color: #666;
+}
+
+
+
+#top_bg_container_all {
+	padding: 0px;
+	margin: 0px;
+	height: 73px;
+}
+
+
+#empty {
+	clear: both;
+}
+
+#container_all {
+	width: 960px;
+	border: 1px solid #666;
+	border-top: none;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fff;
+}
+
+#container_content {
+	width: 920px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#cleardiv {
+	clear: both;
+}
+
+
+
+#table_container {
+	margin:auto;
+	width:920px;
+	margin-top:15px;
+	margin-bottom:0px;
+}
+
+#table {
+	width: 920px;
+	border: 1px solid #CCCCCC;
+	border-bottom:none;
+	float:left;
+	color: #333;
+}
+
+#table_cell {
+	width:inherit;
+	height:inherit;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+#table_cell a {
+	cursor:pointer;
+	text-decoration:none;
+}
+.alternate_table_row_white {
+	background-color:#FFFFFF;
+}
+.alternate_table_row_grey {
+	background-color:#F6F6F5;
+}
+
+.table_row_red {
+	background-color:#FF0000;
+}
+
+#form_field {
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+	float:left;
+	margin-right: 10px;
+	width: 100px;
+}
+
+
+
+#form_input {
+	float: left;
+}
+
+
+.inputtext {
+	height: 28px;
+	line-height: 30px;
+	text-align: left;
+	padding-left: 5px;
+	border: 1px solid #CCC;
+}
+
+
+#action_bar {
+	width:920px;
+	height:35px;
+	background-color:#F6F6F5;
+	border: 1px solid #CCCCCC;
+	margin:auto;
+	margin-top: 15px;
+}
+
+#action {
+	float:right;
+	margin-right: 20px;
+	margin-top:11px;
+	margin-bottom:11px;
+	font-weight:bold;
+}
+#action a {
+	text-decoration:none;
+	color:#000;
+	cursor:pointer;
+}
+
+#action a:hover {
+	text-decoration: underline;
+}
+
+.title_action {
+	float: right;
+	margin-right: 20px;
+	font-size: 12px;
+	margin-top:11px;
+	margin-bottom:11px;
+}
+
+.add_calendar_container {
+	height: 30px;
+	margin: 15px 0;
+}
+
+.create_calendar {
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	margin-right: 10px;
+}
+
+.create_calendar a {
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 12px;
+	color: #333;
+}
+
+.create_calendar a:hover {
+	color: #666;
+}
+
+.calendar_status {
+	width: 900px;
+	color: #fff;
+	padding: 10px;
+	margin-top: 15px;	
+}
+
+#filter {
+	float:left;
+	margin-left: 20px;
+	margin-top:11px;
+	margin-bottom:11px;
+	font-weight:bold;
+}
+
+
+
+#filter_submit {
+	text-decoration:underline;
+	font-weight:bold;
+	float:left;
+	margin-left:10px;
+	height:20px;
+	margin-top:11px;
+	margin-bottom:11px;
+}
+#filter_submit a {
+	color:#000;
+	cursor:pointer;
+}
+
+/************************************************************/
+/*HEADER************************************************/
+
+
+.header_left {
+	float: left;
+}
+
+.header_title {
+	width: 500px;
+	height: 35px;
+	line-height: 50px;
+}
+
+.link_website {
+	height: 20px;
+	padding: 10px 0 5px;
+	font-weight: bold;
+}
+
+.link_website a {
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.link_website a:hover {
+	text-decoration: underline;
+}
+
+.header_identity_container {
+	float: right;
+	text-align: right;
+	font-size: 13px;
+}
+
+.header_identity {
+	margin-top: 10px;
+	
+}
+
+.header_logout a {
+	text-decoration: none;
+	color: #333;
+}
+
+.header_logout a:hover {
+	text-decoration: underline;
+}
+
+.line_dotted {
+	width: 920px;
+	height: 1px;
+	border-top: 1px dotted #666666;
+}
+
+
+
+
+/* MENU ***********************************************************/
+
+#menu_container {
+	width: 920px;
+	height: 32px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #333;
+	z-index: 100;
+}
+
+#menu {
+	padding:0;
+	margin:0;
+}
+
+#menu ul {
+	padding:0;
+	margin:0;
+}
+
+#menu li {
+	position: relative;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding:0;
+	font-size:10px;
+} 
+
+#menu li a {
+	height: 32px;
+	display: block;
+	padding: 0 16px;
+	text-decoration:none;
+	text-align: center;
+	line-height: 32px;
+	background-color: #333;
+	color: #fff;
+	cursor: pointer;
+} 
+
+#menu li a:hover {
+	background-color: #ccc;
+	color: #000;
+}
+
+#menu ul ul {
+	position: absolute;
+	top: 32px; 
+	
+	z-index: 1000;
+} 
+
+#menu ul ul li a {
+	width:116px;
+	height: 32px;
+	display: block;
+	text-decoration:none;
+	text-align: center;
+	line-height: 32px;
+	background-color: #666;
+	color: #fff;
+} 
+
+#menu ul ul li a:hover {
+	background-color: #999;
+}
+
+
+.home_button {
+	height: 32px;
+	background-image: url(../images/buttons/home.png);
+	background-position: top left;
+}
+
+.home_button:hover {
+	background-position: top right;
+	background-color: #333;
+}
+
+
+/*************************************************************/
+/*WELCOME PAGE***********************************************/
+#welcome_container {
+	text-align: center;
+	height: 350px;
+	margin-top: 50px;
+}
+
+.welcome_text {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	color: #333;
+}
+/************************************************************/
+/*LOGIN************************************************/
+#login_container {
+	margin: auto;
+	margin-top: 30px;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	width: 470px;
+	height: 230px;
+	border: 1px solid #CCC;
+}
+#login_left {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	float: left;
+	width: 180px;
+	height: 180px;
+	background-image:url('../images/login_main.gif');
+	background-repeat:no-repeat;
+	background-position:center;
+}
+#login_right {
+	float: left;
+	margin-top: 20px;
+}
+
+#login_label {
+	font-weight: bold;
+	text-align: right;
+	width: 195px;
+	float:left;
+	height: 50px;
+	line-height: 50px;
+	margin-top: 10px;
+}
+
+#login_button_container {
+	float: right;
+	margin-top: 14px;
+}
+
+#login_button {
+	width: 51px;
+	height: 51px;
+	cursor: pointer;
+	border: none;
+	background: url(../images/buttons/login_button.png) top left no-repeat;
+	padding:0px;
+	float:right;
+}
+
+
+#alert_login {
+	margin: auto;
+	width: 470px;
+	height: 20px;
+	background-color:#900;
+	color: #FFFFFF;
+	text-align:center;
+	padding-bottom: 4px;
+	padding-top: 10px;
+}
+/*************************************************/
+/*FORMS****************************************/
+#form_container {
+	margin-top:50px;
+	width:920px;
+}
+
+.label_title {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.label_subtitle {
+	font-size: 14px;
+}
+
+.label_subtitle a {
+	font-size: 14px;
+	color: #333;
+}
+
+
+#input_box {
+	margin-top: 10px;
+}
+
+#input_box select {
+	width: 200px;
+}
+
+#input_box textarea {
+	width: 910px;
+	height: 80px;
+	border: 1px solid #CCC;
+	background-color:#F5F5F5;
+	/*resize: none;*/
+	padding: 5px;
+}
+
+.input_container {
+	float: left;
+	margin-right: 20px;
+}
+
+#rowspace {
+	clear: both;
+	height:25px;	
+}
+
+#rowline {
+	height:3px;
+	width:920px;
+	border-top: 1px dotted #666;
+}
+
+.long_input_box {
+	width: 400px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 5px;
+	border: 1px solid #ccc;
+	background-color: #F5F5F5;
+	font-size: 13px;
+}
+
+.short_input_box {
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 5px;
+	border: 1px solid #ccc;
+	background-color: #F5F5F5;
+	font-size: 13px;
+}
+
+.long_input_box {
+	width: 910px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 5px;
+	border: 1px solid #ccc;
+	background-color: #F5F5F5;
+	font-size: 13px;
+}
+
+/*************************************************/
+/*BUTTONS****************************************/
+
+.trash_button {
+	width: 16px;
+	height: 16px;
+	background: url(../images/trash.png);
+	display: block;
+	margin-top: 8px;
+}
+
+
+.bridge_buttons_container {
+	width: 920px;
+	height: 100px;
+	background-color: #333;
+}
+
+.cancel_button a {
+	float: left;
+	display: block;
+	width: 150px;
+	height: 50px;
+	background-position: 0px 0px;
+	margin-top: 25px;
+	margin-left: 10px;
+}
+
+.cancel_button a:hover {
+	background-position: -160px 0px;
+}
+
+.admin_button a,
+.admin_button input {
+	background-image: url(../images/buttons/admin_buttons.png);
+}
+
+#apply_button {
+	float: left;
+	width: 150px;
+	height: 50px;
+	background-position: 0px -60px;
+	cursor: pointer;
+	border: none;
+	margin-top: 25px;
+	margin-left: 10px;
+}
+
+#apply_button:hover {
+	background-position: -160px -60px;
+}
+
+#publish_button {
+	float: left;
+	width: 150px;
+	height: 50px;
+	background-position: -350px -60px;
+	cursor: pointer;
+	border: none;
+	margin-top: 25px;
+	margin-left: 10px;
+}
+
+#publish_button:hover {
+	background-position: -510px -60px;
+}
+
+/*****CALENDARS.PHP**********/
+.calendar_title_col1 {
+	width: 30px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-bottom:1px solid #CCC;
+	text-align:center;
+	font-weight:bold;
+}
+
+.calendar_title_col2 {
+	width: 40px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-bottom:1px solid #CCC;
+	font-weight:bold;
+}
+
+.calendar_title_col3 {
+	width: 220px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-bottom:1px solid #CCC;
+	font-weight:bold;
+}
+
+.calendar_title_col4 {
+	width: 150px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-bottom:1px solid #CCC;
+	font-weight:bold;
+}
+.calendar_title_col5 {
+	width: 150px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-bottom:1px solid #CCC;
+	font-weight:bold;
+}
+
+.calendar_title_col6 {
+	width: 130px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-bottom:1px solid #CCC;
+	font-weight:bold;
+}
+
+.calendar_title_col7 {
+	width: 100px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-bottom:1px solid #CCC;
+	font-weight:bold;
+}
+.calendar_title_col8 {
+	width: 100px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-bottom:1px solid #CCC;
+	font-weight:bold;
+}
+
+
+.calendar_row_col1 {
+	width: 30px;
+	height: 60px;
+	float:left;
+	border-bottom:1px solid #CCC;
+	text-align:center;
+}
+.calendar_row_col2 {
+	width: 40px;
+	height: 60px;
+	float:left;
+	border-bottom:1px solid #CCC;
+}
+.calendar_row_col3 {
+	width: 220px;
+	height: 60px;
+	float:left;
+	border-bottom:1px solid #CCC;
+}
+
+.calendar_row_col4 {
+	width: 150px;
+	height: 60px;
+	float:left;
+	border-bottom:1px solid #CCC;
+}
+.calendar_row_col5 {
+	width: 150px;
+	height: 60px;
+	float:left;
+	border-bottom:1px solid #CCC;
+}
+
+.calendar_row_col6 {
+	width: 130px;
+	height: 60px;
+	float:left;
+	border-bottom:1px solid #CCC;
+}
+
+.calendar_row_col7 {
+	width: 100px;
+	height: 60px;
+	float:left;
+	border-bottom:1px solid #CCC;
+}
+
+.calendar_row_col8 {
+	width: 100px;
+	height: 60px;
+	float:left;
+	border-bottom:1px solid #CCC;
+}
+
+.calendar_row_col6 a, .calendar_row_col7 a, .calendar_row_col8 a {
+	text-decoration:none;
+	color:#000;
+}
+
+/*****EVENTS.PHP**********/
+
+.custom_time_container {
+	margin-top: 10px;
+}
+
+#erase_row {
+	background: url(../images/erase.gif);
+	width: 70px;
+	height: 20px;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+#erase_row:hover {
+	background: url(../images/erase.gif) top right;
+}
+
+.plusbutton {
+	background: url(../images/piu.gif) top left;
+	width: 30px;
+	height: 30px;
+	border: none;
+	cursor: pointer;
+}
+
+.plusbutton:hover {
+	background: url(../images/piu.gif) top right;
+}
+
+.event_title_col1 {
+	width: 30px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-bottom:1px solid #CCC;
+	text-align:center;
+	font-weight:bold;
+}
+
+.event_title_col2 {
+	width: 40px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-bottom:1px solid #CCC;
+	font-weight:bold;
+}
+
+.event_title_col3 {
+	width: 300px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-bottom:1px solid #CCC;
+	font-weight:bold;
+}
+
+.event_title_col4 {
+	width: 150px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-bottom:1px solid #CCC;
+	font-weight:bold;
+}
+
+.event_title_col5 {
+	width: 160px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-bottom:1px solid #CCC;
+	font-weight:bold;
+}
+
+.event_title_col6 {
+	width: 120px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-bottom:1px solid #CCC;
+	font-weight:bold;
+}
+.event_title_col7 {
+	width: 120px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-bottom:1px solid #CCC;
+	font-weight:bold;
+}
+
+
+.event_row_col1 {
+	width: 30px;
+	height: 60px;
+	float:left;
+	border-bottom:1px solid #CCC;
+	text-align:center;
+}
+.event_row_col2 {
+	width: 40px;
+	height: 60px;
+	float:left;
+	border-bottom:1px solid #CCC;
+}
+.event_row_col3 {
+	width: 300px;
+	height: 60px;
+	float:left;
+	border-bottom:1px solid #CCC;
+}
+.event_row_col4 {
+	width: 150px;
+	height: 60px;
+	float:left;
+	border-bottom:1px solid #CCC;
+}
+
+.event_row_col5 {
+	width: 160px;
+	height: 60px;
+	float:left;
+	border-bottom:1px solid #CCC;
+}
+
+.event_row_col6 {
+	width: 120px;
+	height: 60px;
+	float:left;
+	border-bottom:1px solid #CCC;
+}
+
+.event_row_col7 {
+	width: 120px;
+	height: 60px;
+	float:left;
+	border-bottom:1px solid #CCC;
+}
+
+.event_row_col7 a {
+	text-decoration:none;
+	color:#000;
+}
+
+/*********twitter_spam and twitter_approve.php***********/
+.spam_title_col1 {
+	width: 30px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-right:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+	text-align:center;
+	font-weight:bold;
+}
+
+.spam_title_col2 {
+	width: 40px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-right: 1px solid #CCC;
+	border-bottom:1px solid #CCC;
+	font-weight:bold;
+}
+
+.spam_title_col3 {
+	width: 768px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-right: 1px solid #CCC;
+	border-bottom:1px solid #CCC;
+	font-weight:bold;
+}
+
+
+.spam_title_col4 {
+	width: 79px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-bottom:1px solid #CCC;
+	font-weight:bold;
+}
+
+.spam_row_col1 {
+	width: 30px;
+	height: 60px;
+	float:left;
+	border-right:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+	text-align:center;
+}
+.spam_row_col2 {
+	width: 40px;
+	height: 60px;
+	float:left;
+	border-right: 1px solid #CCC;
+	border-bottom:1px solid #CCC;
+}
+.spam_row_col3 {
+	width: 768px;
+	height: 60px;
+	float:left;
+	border-right: 1px solid #CCC;
+	border-bottom:1px solid #CCC;
+}
+.spam_row_col4 {
+	width: 79px;
+	height: 60px;
+	float:left;
+	border-bottom:1px solid #CCC;
+}
+
+/*****mobile.PHP**********/
+.mobile_title_col1 {
+	width: 30px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-bottom:1px solid #CCC;
+	text-align:center;
+	font-weight:bold;
+}
+
+.mobile_title_col2 {
+	width: 40px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-bottom:1px solid #CCC;
+	font-weight:bold;
+}
+
+.mobile_title_col3 {
+	width: 450px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-bottom:1px solid #CCC;
+	font-weight:bold;
+}
+
+.mobile_title_col4 {
+	width: 200px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-bottom:1px solid #CCC;
+	font-weight:bold;
+}
+
+.mobile_title_col5 {
+	width: 200px;
+	height: 30px;
+	float:left;
+	background-color:#F6F6F5;
+	border-bottom:1px solid #CCC;
+	font-weight:bold;
+}
+
+
+
+
+.mobile_row_col1 {
+	width: 30px;
+	height: 60px;
+	float:left;
+	border-bottom:1px solid #CCC;
+	text-align:center;
+}
+.mobile_row_col2 {
+	width: 40px;
+	height: 60px;
+	float:left;
+	border-bottom:1px solid #CCC;
+}
+.mobile_row_col3 {
+	width: 450px;
+	height: 60px;
+	float:left;
+	border-bottom:1px solid #CCC;
+}
+.mobile_row_col4 {
+	width: 200px;
+	height: 60px;
+	float:left;
+	border-bottom:1px solid #CCC;
+}
+
+.mobile_row_col5 {
+	width: 200px;
+	height: 60px;
+	float:left;
+	border-bottom:1px solid #CCC;
+}
+
+
+.mobile_row_col4 a, .mobile_row_col5 a {
+	text-decoration:none;
+	color:#000;
+}
+
+.modal_sfondo{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	z-index:30;
+	background-color:#000;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+
+}
+
+.modal_loading {
+	position:fixed;
+	top:50%;
+	left:50%;
+	z-index:40;
+	width:128px;
+	height:128px;
+	margin-top:-64px;
+	margin-left:-64px;
+}
+
+

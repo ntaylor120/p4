@@ -1,0 +1,454 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== 
+================================================== */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	font-family: 'CuprumFFURegular';
+	font-size: 16px;
+	background: url(../../images/bg/bg.png) top left repeat;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+	
+	
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a { text-decoration: none; }
+
+img { max-width: 100%; }
+	
+
+/* FONT
+================================================== 
+================================================== */
+
+@font-face {
+    font-family: 'BebasRegular';
+    src: url('../../font/BEBAS___-webfont.eot');
+    src: url('../../font/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../font/BEBAS___-webfont.woff') format('woff'),
+         url('../../font/BEBAS___-webfont.ttf') format('truetype'),
+         url('../../font/BEBAS___-webfont.svg#BebasRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CuprumFFURegular';
+    src: url('../../font/Cuprum-webfont.eot');
+    src: url('../../font/Cuprum-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../font/Cuprum-webfont.woff') format('woff'),
+         url('../../font/Cuprum-webfont.ttf') format('truetype'),
+         url('../../font/Cuprum-webfont.svg#CuprumFFURegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.bebas { font-family: 'BebasRegular'; }
+
+.font_big { font-size: 2em; }
+
+.font_medium { font-size: 1.3em; }
+
+.font_small { font-size: 0.8em; }
+
+
+/* COMMONS
+================================================== 
+================================================== */
+
+
+.float_left { float: left; }
+
+.float_right { float: right; }
+
+.mark_white { color: #fff; }
+
+.mark_black { color: #333; }
+
+.mark_blue { color: #567BD2;}
+
+.mark_grey { color: #666; }
+
+.mark_grey_less { color: #999; }
+
+.bg_black { background-color: #333; }
+
+.bg_blue { background-color: #567BD2;}
+
+.bg_green { background-color: #669933; }
+
+.bg_red { background-color: #D74E4E; }
+
+.bg_grey { background-color: #EAEAEA; }
+
+.bg_grey_ccc { background-color: #CCC; }
+
+.bg_white { background-color: #fff; }
+
+.cleardiv { clear: both; }
+
+.margin_tb { margin: 20px auto; }
+
+.margin_tb_medium { margin: 4% auto; }
+
+.margin_tb_small { margin: 2% auto; }
+
+.margin_t {	margin-top: 2%; }
+
+.margin_l {	margin-left: 2%; }
+
+.padding_standard { padding: 3%; }
+
+.padding_button_big { padding: 3% 3% 1% 3%; }
+
+.padding_button_small { padding: 3% 3% 2% 3%; }
+
+.padding_small { padding: 1%; }
+
+.lineheight { line-height: 100%; }
+
+.radius {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+
+/* HOME
+================================================== 
+================================================== */
+
+
+.m_container_all {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.m_line_divide {
+	width: 98%;
+	margin: 10px 1%;
+	height: 1px;
+	border-top: 1px dotted #ccc;
+}
+
+
+/********* TOP ****/
+
+.m_month_navigation_container { 
+	width: 83%;
+	margin-left: 1%;
+	margin-top: 1%;
+}
+
+		.m_month_container { 
+			width: 60%;
+			height: 36px;
+   			position: relative;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+		}
+		
+				.month_name {
+					width: 98%;
+					padding-left: 2%;
+					height: 36px;
+					line-height: 42px;
+					position: absolute;			
+				}
+				
+				.month_year {
+					margin-top: 20px;
+					padding-right: 6px;
+					text-align: right;
+				}
+		
+		/* navigation month */	
+		.m_month_nav_container {
+			width: 40%;
+		}
+		
+				.m_month_nav_button {
+					margin-left: 5%;
+					display: block;
+					padding: 3% 6% 1% 6%;
+					-webkit-border-radius: 5px;
+					-moz-border-radius: 5px;
+					border-radius: 5px;
+				}
+				
+				.month_nav_button_prev {
+					background-position: -370px 0;
+				}
+		
+		/* type view */		
+		.view_type_container {
+			margin-top: 6px;
+		}
+		
+		.view_type_button {
+			height: 20px;
+			margin-right: 6px;
+			width: 80px;
+		}
+		
+		.view_type_button a {
+			display: block;
+			height: 20px;
+			line-height: 20px;
+			text-align: center;
+			width: 80px;
+		}
+		
+		.select_calendar_container {
+			margin-top: 10px;
+		}
+		
+	
+
+.m_search_container { 
+	width: 13%;
+	margin-right: 1%;
+	margin-top: 1%;
+	}
+	
+.m_search_input_button {
+	height: 25px;
+	-webkit-appearance: none;
+}
+
+.search_input_container {
+	width: 60%;
+}
+	
+.m_search_input {
+	width: 100%;
+	height: 25px;
+	-webkit-appearance: none;
+	border: 1px solid #ccc;
+}
+	
+.event_filters_container {
+	position: absolute;
+	right: 1%;
+	top: 1%;
+}
+	
+/********* CALENDAR ****/
+
+
+.m_calendar_container { width: 100%; }
+
+		.name_days_container {
+			width: 100%;
+			margin: 10px 0;
+		}
+		
+		.day_name {
+			width: 13%;
+			margin-right: 1%;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+		}
+		
+		.day_container {
+			margin-bottom: 1%;
+			margin-right: 1%;
+			width: 13.1%;
+			height: 40px;
+			border: 1px dashed #CCCCCC;
+			position: relative;
+		}
+		
+		.day_container a {
+			display: block;
+			float: left;
+			height: 40px;
+			width: 100%;
+		}
+		
+		.m_day_number {
+			font-size: 14px;
+			margin-left: 5%;
+			margin-top: 5%;
+			width: 15%;
+		}
+		
+		.m_number_event {
+			text-align: center;
+			width: 100%;
+			padding: 2% 0;
+			position: absolute;
+			bottom: 0;
+		}
+		
+
+
+/* EVENT LIST
+================================================== 
+================================================== */
+		
+.m_event_list_container {
+	border: 1px dotted #ccc;
+	width: 96%;
+	padding: 1%;
+	margin: 0 1%;
+}
+
+.m_single_event_list_container { width: 100%; }
+
+		.m_event_list_photo {
+			width: 35%
+		}
+		
+		.m_event_list_information {
+			width: 63%;
+			margin-left: 2%;
+		}
+		
+		
+.m_page_list_button {
+	float: left;
+	display: block;
+	text-align: center;
+	color: #fff;
+}
+
+.m_page_list_nav_button {
+	width: 20%;
+	margin-right: 1%;
+}
+
+.m_page_list_nav_button:hover {
+	background-color: #000;
+}
+
+.m_page_list_number_button {
+	width: 35px;
+	height: 30px;
+	background-position: -590px -100px;
+	margin-right: 10px;
+}
+
+.m_page_list_number_button:hover {
+	width: 35px;
+	height: 30px;
+	background-position: -630px -100px;
+}
+
+
+
+		
+		
+/* EVENT 
+================================================== 
+================================================== */
+
+.m_month_navigation_container_small { 
+	width: 63%;
+	margin-left: 1%;
+	margin-top: 1%;
+}
+
+		.m_month_container_event { 
+			width: 100%;
+			height: 36px;
+   			position: relative;
+		}		
+
+.m_event_back { 
+	position: absolute;
+	top: 1%;
+	right: 1%;
+}
+
+.m_single_event_container { width: 100%; }
+
+		.m_event_photo {
+			width: 100%
+		}
+		
+		.m_event_information_column {
+			width: 50%;
+		}
+		
+		.m_event_information_label {
+			width: 85%;
+		}
+		
+		.m_link_button {
+			display: block;
+		}
+
+
+
+
+
+
+
+
+.modal_loading {
+	width:100px;
+	height:100px;
+	top:50%;
+	margin-top:-50px;
+	left:50%;
+	margin-left:-50px;
+	position:fixed;
+	z-index:40;
+}
+
+.modal_sfondo{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	z-index:30;
+	background-color:#000;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+
+}
+
